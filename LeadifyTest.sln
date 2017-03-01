@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeadifyTest.Presentation.Web", "LeadifyTest.Presentation.Web\LeadifyTest.Presentation.Web.csproj", "{87A8CA20-9621-4781-A97F-FF6D1B2D1665}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeadifyTest.Presentation.Web.Tests", "LeadifyTest.Presentation.Web.Tests\LeadifyTest.Presentation.Web.Tests.csproj", "{57EA22EF-39B0-4679-9475-A1CF539D0012}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87A8CA20-9621-4781-A97F-FF6D1B2D1665}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87A8CA20-9621-4781-A97F-FF6D1B2D1665}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87A8CA20-9621-4781-A97F-FF6D1B2D1665}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87A8CA20-9621-4781-A97F-FF6D1B2D1665}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57EA22EF-39B0-4679-9475-A1CF539D0012}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57EA22EF-39B0-4679-9475-A1CF539D0012}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57EA22EF-39B0-4679-9475-A1CF539D0012}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57EA22EF-39B0-4679-9475-A1CF539D0012}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
