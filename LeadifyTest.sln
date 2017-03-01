@@ -6,10 +6,28 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeadifyTest.Presentation.Web", "LeadifyTest.Presentation.Web\LeadifyTest.Presentation.Web.csproj", "{87A8CA20-9621-4781-A97F-FF6D1B2D1665}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeadifyTest.Presentation.Web.Tests", "LeadifyTest.Presentation.Web.Tests\LeadifyTest.Presentation.Web.Tests.csproj", "{57EA22EF-39B0-4679-9475-A1CF539D0012}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EE062B75-9B57-482C-93AE-76C471FC4B78} = {EE062B75-9B57-482C-93AE-76C471FC4B78}
+		{0BADA175-5E4A-4CBF-B8C3-D353FB74A8E9} = {0BADA175-5E4A-4CBF-B8C3-D353FB74A8E9}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeadifyTest.Data", "LeadifyTest.Data\LeadifyTest.Data.csproj", "{0BADA175-5E4A-4CBF-B8C3-D353FB74A8E9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeadifyTest.Services", "LeadifyTest.Services\LeadifyTest.Services.csproj", "{EE062B75-9B57-482C-93AE-76C471FC4B78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeadifyTest.Services.Tests", "LeadifyTest.Services.Tests\LeadifyTest.Services.Tests.csproj", "{D0CB43F2-D8F6-46A5-B7FB-A1075557BCC5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{87A8CA20-9621-4781-A97F-FF6D1B2D1665} = {87A8CA20-9621-4781-A97F-FF6D1B2D1665}
+		{EE062B75-9B57-482C-93AE-76C471FC4B78} = {EE062B75-9B57-482C-93AE-76C471FC4B78}
+		{0BADA175-5E4A-4CBF-B8C3-D353FB74A8E9} = {0BADA175-5E4A-4CBF-B8C3-D353FB74A8E9}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeadifyTest.Data.Tests", "LeadifyTest.Data.Tests\LeadifyTest.Data.Tests.csproj", "{F3A993CE-0B33-4B18-9C03-386C65D8EBCE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{87A8CA20-9621-4781-A97F-FF6D1B2D1665} = {87A8CA20-9621-4781-A97F-FF6D1B2D1665}
+		{EE062B75-9B57-482C-93AE-76C471FC4B78} = {EE062B75-9B57-482C-93AE-76C471FC4B78}
+		{0BADA175-5E4A-4CBF-B8C3-D353FB74A8E9} = {0BADA175-5E4A-4CBF-B8C3-D353FB74A8E9}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +51,14 @@ Global
 		{EE062B75-9B57-482C-93AE-76C471FC4B78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE062B75-9B57-482C-93AE-76C471FC4B78}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE062B75-9B57-482C-93AE-76C471FC4B78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0CB43F2-D8F6-46A5-B7FB-A1075557BCC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0CB43F2-D8F6-46A5-B7FB-A1075557BCC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0CB43F2-D8F6-46A5-B7FB-A1075557BCC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0CB43F2-D8F6-46A5-B7FB-A1075557BCC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3A993CE-0B33-4B18-9C03-386C65D8EBCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3A993CE-0B33-4B18-9C03-386C65D8EBCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3A993CE-0B33-4B18-9C03-386C65D8EBCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3A993CE-0B33-4B18-9C03-386C65D8EBCE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
