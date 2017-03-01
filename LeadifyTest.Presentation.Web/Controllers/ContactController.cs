@@ -1,5 +1,7 @@
 ﻿using System.Web.Mvc;
 using LeadifyTest.Services;
+using LeadifyTest.Presentation.Web.Mappers;
+using System;
 
 namespace LeadifyTest.Presentation.Web.Controllers
 {
@@ -15,12 +17,12 @@ namespace LeadifyTest.Presentation.Web.Controllers
         // GET: Contact
         public ActionResult Index()
         {
-            var list = _contactService.GetAllContacts();
+            var list = _contactService.GetAllContacts().MapToViewModelList();
             return View(list);
         }
 
         // GET: Contact/Details/5
-        public ActionResult Details(int id)
+        public ActionResult Details(Guid id)
         {
             return View();
         }
@@ -48,14 +50,14 @@ namespace LeadifyTest.Presentation.Web.Controllers
         }
 
         // GET: Contact/Edit/5
-        public ActionResult Edit(int id)
+        public ActionResult Edit(Guid id)
         {
             return View();
         }
 
         // POST: Contact/Edit/5
         [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
+        public ActionResult Edit(Guid id, FormCollection collection)
         {
             try
             {
@@ -70,14 +72,14 @@ namespace LeadifyTest.Presentation.Web.Controllers
         }
 
         // GET: Contact/Delete/5
-        public ActionResult Delete(int id)
+        public ActionResult Delete(Guid id)
         {
             return View();
         }
 
         // POST: Contact/Delete/5
         [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
+        public ActionResult Delete(Guid id, FormCollection collection)
         {
             try
             {
