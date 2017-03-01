@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeadifyTest.Presentation.We
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeadifyTest.Presentation.Web.Tests", "LeadifyTest.Presentation.Web.Tests\LeadifyTest.Presentation.Web.Tests.csproj", "{57EA22EF-39B0-4679-9475-A1CF539D0012}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeadifyTest.Data", "LeadifyTest.Data\LeadifyTest.Data.csproj", "{0BADA175-5E4A-4CBF-B8C3-D353FB74A8E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeadifyTest.Services", "LeadifyTest.Services\LeadifyTest.Services.csproj", "{EE062B75-9B57-482C-93AE-76C471FC4B78}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{57EA22EF-39B0-4679-9475-A1CF539D0012}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57EA22EF-39B0-4679-9475-A1CF539D0012}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57EA22EF-39B0-4679-9475-A1CF539D0012}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BADA175-5E4A-4CBF-B8C3-D353FB74A8E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BADA175-5E4A-4CBF-B8C3-D353FB74A8E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BADA175-5E4A-4CBF-B8C3-D353FB74A8E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BADA175-5E4A-4CBF-B8C3-D353FB74A8E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE062B75-9B57-482C-93AE-76C471FC4B78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE062B75-9B57-482C-93AE-76C471FC4B78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE062B75-9B57-482C-93AE-76C471FC4B78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE062B75-9B57-482C-93AE-76C471FC4B78}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
