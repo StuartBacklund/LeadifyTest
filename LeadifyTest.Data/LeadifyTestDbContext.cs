@@ -4,9 +4,15 @@ namespace LeadifyTest.Data
     using System.Data.Entity;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Linq;
+    using Entities;
 
     public partial class LeadifyTestDbContext : DbContext
     {
+        static LeadifyTestDbContext()
+        {
+            Database.SetInitializer<LeadifyTestDbContext>(null);
+        }
+
         public LeadifyTestDbContext()
             : base("name=LeadifyTestConnection")
         {
@@ -16,6 +22,7 @@ namespace LeadifyTest.Data
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            modelBuilder.Configurations.Add(new ContactMapping());
         }
     }
 }

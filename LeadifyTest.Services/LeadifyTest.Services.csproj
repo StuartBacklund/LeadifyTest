@@ -88,6 +88,10 @@
       <Project>{0bada175-5e4a-4cbf-b8c3-d353fb74a8e9}</Project>
       <Name>LeadifyTest.Data</Name>
     </ProjectReference>
+    <ProjectReference Include="..\LeadifyTest.Entities\LeadifyTest.Entities.csproj">
+      <Project>{8b644c6a-d5ec-405f-9220-f3cb3d546b9a}</Project>
+      <Name>LeadifyTest.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

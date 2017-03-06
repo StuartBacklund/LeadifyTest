@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using AutoMapper;
-using LeadifyTest.Data;
+using LeadifyTest.Entities;
 using LeadifyTest.Presentation.Web.Models;
 
 namespace LeadifyTest.Presentation.Web.Mappers

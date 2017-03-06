@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using LeadifyTest.Data;
+using LeadifyTest.Entities;
 
 namespace LeadifyTest.Services
 {
@@ -9,6 +10,12 @@ namespace LeadifyTest.Services
         Contact GetById(Guid Id);
 
         List<Contact> GetAllContacts();
+
+        void Update(Contact contact);
+
+        void Remove(Contact contact);
+
+        void Create(Contact contact);
     }
 
     public class ContactService : IContactService
@@ -28,6 +35,24 @@ namespace LeadifyTest.Services
         public List<Contact> GetAllContacts()
         {
             return _contactRepository.GetAllContacts();
+        }
+
+        public void Update(Contact contact)
+        {
+            _contactRepository.Update(contact);
+            _contactRepository.SaveChanges();
+        }
+
+        public void Remove(Contact contact)
+        {
+            _contactRepository.Remove(contact);
+            _contactRepository.SaveChanges();
+        }
+
+        public void Create(Contact contact)
+        {
+            _contactRepository.Create(contact);
+            _contactRepository.SaveChanges();
         }
     }
 }

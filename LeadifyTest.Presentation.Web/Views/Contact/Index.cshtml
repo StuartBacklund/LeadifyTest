@@ -1,13 +1,11 @@
 ﻿@model IEnumerable<LeadifyTest.Presentation.Web.Models.ContactViewModel>
 @{
-    ViewBag.Title = "Contacts Page";
+    ViewBag.Title = "Contact List";
 }
 
 <div class="jumbotron">
-    CONTACT
+    CONTACTS
 </div>
-
-<h2>Index</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -17,14 +15,28 @@
         <th>
             @Html.DisplayNameFor(model => model.Firstname)
         </th>
-        <th></th>
+        <th>@Html.DisplayNameFor(model => model.Lastname)</th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>@Html.DisplayNameFor(model => model.Cellphone)</th>
+        <th>Action</th>
     </tr>
 
     @foreach (var item in Model)
     {
         <tr>
             <td>
+                @Html.DisplayFor(modelItem => item.Firstname)
+            </td>
+            <td>
                 @Html.DisplayFor(modelItem => item.Lastname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cellphone)
             </td>
             <td>
                 @Html.ActionLink("Edit", "Edit", new { id = item.ContactId }) |

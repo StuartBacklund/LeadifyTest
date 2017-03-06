@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeadifyTest.Data
+namespace LeadifyTest.Entities
 {
     public interface IEntity<T>
     {
