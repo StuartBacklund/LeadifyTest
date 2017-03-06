@@ -58,11 +58,25 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="ContactServiceTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LeadifyTest.Data\LeadifyTest.Data.csproj">
+      <Project>{0bada175-5e4a-4cbf-b8c3-d353fb74a8e9}</Project>
+      <Name>LeadifyTest.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LeadifyTest.Entities\LeadifyTest.Entities.csproj">
+      <Project>{8b644c6a-d5ec-405f-9220-f3cb3d546b9a}</Project>
+      <Name>LeadifyTest.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LeadifyTest.Services\LeadifyTest.Services.csproj">
+      <Project>{EE062B75-9B57-482C-93AE-76C471FC4B78}</Project>
+      <Name>LeadifyTest.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

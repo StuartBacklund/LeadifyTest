@@ -25,10 +25,19 @@ namespace LeadifyTest.Presentation.Web.Tests.Controllers
             _contactServiceMock = new Mock<IContactService>();
 
             listContact = new List<Contact>() {
-                                new Contact() { ContactId = Guid.NewGuid(), Firstname = "Test1" },
-                                new Contact() { ContactId =  Guid.NewGuid(), Firstname = "Test2" },
-                                new Contact() { ContactId =  Guid.NewGuid(), Firstname = "Test3" }
-                            };
+                                    new Contact() {
+                                        ContactId = Guid.NewGuid(),
+                                        Firstname = "Test1"
+                                    },
+                                    new Contact() {
+                                        ContactId =  Guid.NewGuid(),
+                                        Firstname = "Test2"
+                                    },
+                                    new Contact() {
+                                        ContactId =  Guid.NewGuid(),
+                                        Firstname = "Test3"
+                                    }
+                                };
 
             _contactServiceMock.Setup(f => f.GetAllContacts()).Returns(listContact);
             objController = new ContactController(_contactServiceMock.Object);
@@ -42,7 +51,7 @@ namespace LeadifyTest.Presentation.Web.Tests.Controllers
             // Act
             var result = controller.Index() as ActionResult;
             // Assert
-            Assert.IsNotNull(result);
+            Assert.IsInstanceOfType(result, typeof(ActionResult));
         }
 
         [TestMethod]
@@ -54,7 +63,7 @@ namespace LeadifyTest.Presentation.Web.Tests.Controllers
             // Act
             var result = controller.Details(contact.ContactId) as ActionResult;
             // Assert
-            Assert.IsNotNull(result);
+            Assert.IsInstanceOfType(result, typeof(ActionResult));
         }
 
         [TestMethod]
@@ -66,7 +75,7 @@ namespace LeadifyTest.Presentation.Web.Tests.Controllers
             // Act
             ActionResult result = controller.Edit(contact.ContactId) as ActionResult;
             // Assert
-            Assert.IsNotNull(result);
+            Assert.IsInstanceOfType(result, typeof(ActionResult));
         }
     }
 }
