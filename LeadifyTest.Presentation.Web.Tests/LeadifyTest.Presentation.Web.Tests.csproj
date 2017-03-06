@@ -42,8 +42,16 @@
       <HintPath>..\packages\Autofac.Mvc5.4.0.1\lib\net45\Autofac.Integration.Mvc.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Castle.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Castle.Core.4.0.0\lib\net45\Castle.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Moq, Version=4.7.1.0, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
+      <HintPath>..\packages\Moq.4.7.1\lib\net45\Moq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
@@ -92,7 +100,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Controllers\HomeControllerTest.cs" />
+    <Compile Include="Controllers\ContactControllerTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.config" />
@@ -101,9 +109,21 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\LeadifyTest.Data\LeadifyTest.Data.csproj">
+      <Project>{0bada175-5e4a-4cbf-b8c3-d353fb74a8e9}</Project>
+      <Name>LeadifyTest.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LeadifyTest.Entities\LeadifyTest.Entities.csproj">
+      <Project>{8b644c6a-d5ec-405f-9220-f3cb3d546b9a}</Project>
+      <Name>LeadifyTest.Entities</Name>
+    </ProjectReference>
     <ProjectReference Include="..\LeadifyTest.Presentation.Web\LeadifyTest.Presentation.Web.csproj">
       <Project>{EBE98891-7E66-44EF-9B5D-718A14E17722}</Project>
       <Name>LeadifyTest.Presentation.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LeadifyTest.Services\LeadifyTest.Services.csproj">
+      <Project>{ee062b75-9b57-482c-93ae-76c471fc4b78}</Project>
+      <Name>LeadifyTest.Services</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
